@@ -1,0 +1,15 @@
+{
+  "name": "sharp-cli-script",
+  "version": "1.0.0",
+  "description": "auto-convert-test",
+  "main": "index.js",
+  "scripts": {
+    "watch": "onchange -f add -f change \"./in/**/*.jpg\" \"./in/**/*.png\" -- sharp -i {{file}}  -f webp -o out"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "onchange": "^7.1.0",
+    "sharp-cli": "^1.15.0"
+  }
+}
